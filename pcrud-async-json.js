@@ -55,6 +55,7 @@ server.on("request", async (request, response) => {
   response.writeHead(200, headerText);
   let options = url.parse(request.url, true).query;
   // response.write(JSON.stringify(options));
+
   if (request.url.startsWith("/create")) {
     await createCounter(options.name, response);
     return;
