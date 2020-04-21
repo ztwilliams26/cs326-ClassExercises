@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>XHR State</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="client.js" defer></script>
+  </head>
+  <body>
+
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron jumbotron-fluid" style="background-color: white;">
+        <div class="container">
+          <h1 class="display-4">XHR State</h1>
+          <p class="lead">This is a website for testing XMLHttpRequest (XHR) and your MongoDB + Express backend</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="username">Type in the name of the user below:</label>
+          <input name="username" id="username" class="form-control" placeholder="user" />
+	  <br />
+          <label for="counter">Type in the name of the counter below:</label>
+          <input name="counter" id="countername" class="form-control" placeholder="counter" />
+	  <br />
+          <label for="value"><em>For updates only</em>, type in the new value below:</label>
+	  <input name="value" id="countervalue" class="form-control" placeholder="0" />
+	  <br />
+          <button onclick="counterCreate()" class="btn btn-primary">Create</button>
+          <button onclick="counterRead()" class="btn btn-primary">Read</button>
+          <button onclick="counterUpdate()" class="btn btn-primary">Update</button>
+          <button onclick="counterDelete()" class="btn btn-primary">Delete</button>
+        </br>
+        </div>
+      </div>
+      
+      <div class="col">
+        <p id="output" style="font-size: xx-large;">
+          <small style="font-size: small;"></small>
+        </p>
+      </div>
+      
+    </div>
+  </body>
+</html>
